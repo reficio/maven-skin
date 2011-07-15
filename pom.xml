@@ -1,7 +1,7 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.reficio</groupId>
-    <artifactId>maven-site-skin</artifactId>
+    <artifactId>skin</artifactId>
     <packaging>jar../..</packaging>
     <version>1.0</version>
     <name>Maven Skin for Reficio Project Family</name>
