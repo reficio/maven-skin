@@ -1,2 +1,0 @@
-Files located in the css and images folders are a part of the html template that was bought from the third party company.
-All rights are reserved to that company. If you would like to buy it, please visit http://www.spyka.co.uk

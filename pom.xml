@@ -1,13 +1,65 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.reficio</groupId>
-    <artifactId>skin</artifactId>
+    <artifactId>maven-skin</artifactId>
     <packaging>jar</packaging>
-    <version>1.0</version>
+    <version>1.0.0</version>
     <name>Maven Skin for Reficio Project Family</name>
     <url>http://www.reficio.org</url>
 	
 	<properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
+     <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <inceptionYear>2012</inceptionYear>
+    <developers>
+        <developer>
+            <id>tom.bujok</id>
+            <name>Tom Bujok</name>
+            <email>tom.bujok@reficio.org</email>
+            <roles>
+                <role>project lead</role>
+                <role>developer</role>
+            </roles>
+            <organization>Reficio</organization>
+            <organizationUrl>http://www.reficio.org</organizationUrl>
+            <timezone>+1</timezone>
+        </developer>
+    </developers>
+
+    <issueManagement>
+        <system>github</system>
+        <url>https://github.com/reficio/maven-skin/issues</url>
+    </issueManagement>
+
+    <scm>
+        <connection>scm:git:git://github.com/reficio/maven-skin.git</connection>
+        <developerConnection>scm:git:git@github.com:reficio/maven-skin.git</developerConnection>
+        <url>http://github.com/reficio/maven-skin</url>
+    </scm>
+
+    <ciManagement>
+        <system>jenkins</system>
+        <url>https://reficio.ci.cloudbees.com/job/maven-skin/</url>
+    </ciManagement>
+
+    <distributionManagement>
+        <site>
+            <id>reficio</id>
+            <url>${reficio.server}/projects/${project.name}/${project.version}/</url>
+        </site>
+        <repository>
+            <id>reficio</id>
+            <name>Reficio Maven Repository</name>
+            <url>${reficio.server}/repo/maven</url>
+        </repository>
+    </distributionManagement>
 </project>
