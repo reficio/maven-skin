@@ -6,12 +6,12 @@
     <version>1.0.0</version>
     <name>Maven Skin for Reficio Project Family</name>
     <url>http://www.reficio.org</url>
-	
-	<properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
 
-     <licenses>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
             <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
@@ -62,4 +62,15 @@
             <url>${reficio.server}/repo/maven</url>
         </repository>
     </distributionManagement>
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ftp</artifactId>
+                <version>1.0-beta-7</version>
+            </extension>
+        </extensions>
+    </build>
+
 </project>
