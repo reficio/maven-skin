@@ -30,7 +30,7 @@
                 <role>developer</role>
             </roles>
             <organization>Reficio</organization>
-            <organizationUrl>http://www.reficio.org</organizationUrl>
+            <organizationUrl>www.reficio.org</organizationUrl>
             <timezone>+1</timezone>
         </developer>
     </developers>
@@ -52,14 +52,10 @@
     </ciManagement>
 
     <distributionManagement>
-        <site>
-            <id>reficio</id>
-            <url>${reficio.server}/projects/${project.name}/${project.version}/</url>
-        </site>
         <repository>
             <id>reficio</id>
             <name>Reficio Maven Repository</name>
-            <url>${reficio.server}/repo/maven</url>
+            <url>scp://${reficio.server}/var/www/repo/maven</url>
         </repository>
     </distributionManagement>
 
