@@ -93,6 +93,9 @@
                         <configuration>
                             <excludes>
                                 <exclude>**/*.asc</exclude>
+                                <exclude>**/.*asc</exclude>
+                                <exclude>*.asc</exclude>
+                                <exclude>.*asc</exclude>
                             </excludes>
                         </configuration>
                     </plugin>
