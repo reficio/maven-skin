@@ -1,11 +1,13 @@
 <project>
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.reficio</groupId>
     <artifactId>maven-skin</artifactId>
     <packaging>jar</packaging>
     <version>1.0.0</version>
-    <name>Maven Skin for Reficio Project Family</name>
+    <name>maven-skin</name>
     <url>http://www.reficio.org</url>
+    <description>Maven Skin for Reficio Project Family</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -20,11 +22,12 @@
     </licenses>
 
     <inceptionYear>2012</inceptionYear>
+
     <developers>
         <developer>
             <id>tom.bujok</id>
             <name>Tom Bujok</name>
-            <email>tom.bujok@reficio.org</email>
+            <email>tom.bujok@gmail.com</email>
             <roles>
                 <role>project lead</role>
                 <role>developer</role>
@@ -68,5 +71,29 @@
             </extension>
         </extensions>
     </build>
+
+    <profiles>
+        <profile>
+            <id>gpg</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.4</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
 </project>
